@@ -1,0 +1,26 @@
+package com.example.demo.controller;
+
+
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MainController {
+	
+		
+	@RequestMapping("/")
+	public String login() {
+		return "login";
+	}
+	
+	@GetMapping("/home")
+	public String home() {
+		return "home";
+	}
+	
+	@GetMapping("/crearColaborador")
+	public String crearColaborador()
+	{	
+		return "crearColaborador";
+	}
+}

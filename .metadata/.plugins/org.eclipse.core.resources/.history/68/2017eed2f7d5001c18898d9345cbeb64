@@ -1,0 +1,7 @@
+package com.example.demo.models;
+
+public abstract class Sala {
+	
+	private Long id;
+	private int numero_sala;
+}

@@ -1,0 +1,17 @@
+package com.example.demo.models;
+
+import com.example.models.Persona;
+import com.example.models.Sede;
+
+public class Colaborador extends Persona{
+
+	private Sede sede;
+
+	public Colaborador(int rut, String nombre, String apellido, String correo, String contraseña, String telefono,
+			Sede sede) {
+		super(rut, nombre, apellido, correo, contraseña, telefono);
+		this.sede = sede;
+	}
+	
+	
+}

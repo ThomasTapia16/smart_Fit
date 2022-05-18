@@ -1,0 +1,21 @@
+package com.example.demo.models;
+
+
+import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+
+
+
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+public class Colaborador extends Persona{
+
+	public Colaborador(String rut, String nombre, String apellido, String correo, String pwd) {
+		super(rut, nombre, apellido, correo, pwd);
+		
+	}
+	
+	
+	
+}

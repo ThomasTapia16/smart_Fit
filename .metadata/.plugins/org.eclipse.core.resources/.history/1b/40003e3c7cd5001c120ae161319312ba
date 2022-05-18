@@ -1,0 +1,17 @@
+package com.example.demo.models;
+
+import javax.persistence.Entity;
+
+import javax.persistence.Id;
+
+@Entity
+public class Colaborador extends Persona{
+
+	public Colaborador(String rut, String nombre, String apellido, String correo, String pwd) {
+		super(rut, nombre, apellido, correo, pwd);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+}

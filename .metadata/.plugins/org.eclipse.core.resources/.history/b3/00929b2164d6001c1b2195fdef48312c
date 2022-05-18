@@ -1,0 +1,58 @@
+package com.example.demo.controller;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.models.Administrador;
+import com.example.demo.models.Colaborador;
+import com.example.demo.models.DTI;
+import com.example.demo.repositories.DtiRepository;
+
+
+
+
+@Controller
+public class TestController {
+	@Autowired
+	private DtiRepository Ar;
+		
+	@RequestMapping("/")
+	public String login() {
+		return "login";
+	}
+	
+	@GetMapping("/home")
+	public String home() {
+		return "home";
+	}
+	
+	@GetMapping("/crearColaborador")
+	public String crearColaborador()
+	{	
+		return "crearColaborador";
+	}
+	
+	@GetMapping("/crearAdminsitrador")
+    public String showNewAdminForm(Model model) {
+        Administrador admin = new Administrador(null, null, null, null, null);
+        model.addAttribute("admin", admin);
+        return "new_course";
+    }
+	@PostMapping("/save")
+    public String saveCourse(@ModelAttribute("admin") Administrador admin) {
+        // save Course to database
+		Ar.save(admin);
+		return "redirect:/";
+    }
+	
+}

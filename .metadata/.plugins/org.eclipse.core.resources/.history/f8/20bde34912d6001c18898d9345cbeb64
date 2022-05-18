@@ -1,0 +1,11 @@
+package com.example.demo.models;
+
+import javax.persistence.Id;
+
+public abstract class Sala {
+	
+	@Id
+	private Long id;
+	private int numero_sala;
+	private Sede sede;
+}

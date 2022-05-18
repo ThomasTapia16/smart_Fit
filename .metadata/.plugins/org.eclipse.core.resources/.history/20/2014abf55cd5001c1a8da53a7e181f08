@@ -1,0 +1,15 @@
+package com.example.repositories;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.models.Sede;
+
+@Repository
+@Bean
+public interface SedeRepository extends MongoRepository<Sede,Integer>{
+	
+	
+
+}

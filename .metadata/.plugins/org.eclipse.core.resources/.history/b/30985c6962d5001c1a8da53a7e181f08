@@ -1,0 +1,2 @@
+
+spring.data.mongodb.uri = mongodb+srv://smartfit:GM123@test.tavim.mongodb.net/smartfit?retryWrites=true&w=majority

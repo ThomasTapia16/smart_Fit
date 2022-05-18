@@ -1,0 +1,78 @@
+package com.example.demo.models;
+
+import java.util.LinkedList;
+
+import org.springframework.context.annotation.Bean;
+
+
+
+
+public class Sede {
+	
+	
+	private int id_sede;
+	private String nombre_sede;
+	private String region;
+	private String ciudad;
+	private LinkedList<Sala> salas = new LinkedList<>();
+	
+	public Sede(){}
+	
+	
+	public Sede(String nombre_sede, String region, String ciudad) {
+		
+		this.nombre_sede = nombre_sede;
+		this.region = region;
+		this.ciudad = ciudad;
+	}
+
+	public int getId_sede() {
+		return id_sede;
+	}
+
+	public void setId_sede(int id_sede) {
+		this.id_sede = id_sede;
+	}
+
+	public String getNombre_sede() {
+		return nombre_sede;
+	}
+
+	public void setNombre_sede(String nombre_sede) {
+		this.nombre_sede = nombre_sede;
+	}
+
+	public String getRegion() {
+		return region;
+	}
+
+	public void setRegion(String region) {
+		this.region = region;
+	}
+
+	public String getCiudad() {
+		return ciudad;
+	}
+
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
+	}
+
+	public LinkedList<Sala> getSalas() {
+		return salas;
+	}
+
+	public void setSalas(LinkedList<Sala> salas) {
+		this.salas = salas;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

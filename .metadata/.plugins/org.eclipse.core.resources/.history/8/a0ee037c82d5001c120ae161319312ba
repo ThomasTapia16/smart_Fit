@@ -1,0 +1,8 @@
+package com.example.demo.services;
+
+import com.example.demo.models.Persona;
+
+public interface PersonaI {
+	
+	Persona savePersona(Persona persona);
+}

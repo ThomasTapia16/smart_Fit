@@ -1,0 +1,21 @@
+package com.example.models;
+
+import java.util.LinkedList;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class Sede {
+	
+	@Id
+	private int id_sede;
+	private String nombre_sede;
+	private String region;
+	private String ciudad;
+	private LinkedList<Sala> salas = new LinkedList<>();
+	
+	
+	
+
+}

@@ -1,0 +1,20 @@
+package com.example.demo.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.models.DTI;
+import com.example.demo.repositories.DtiRepository;
+
+@Service
+public class DtiServiceI implements DtiService{
+	
+	@Autowired
+	private DtiRepository dtirep;
+
+	@Override
+	public void saveDTI(DTI dti) {
+		return this.dtirep.save(dti);
+		
+	}
+}

@@ -1,0 +1,18 @@
+package com.example.demo.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.models.Persona;
+import com.example.demo.repositories.PersonaRepository;
+
+public class PersonaS implements PersonaI{
+	
+	@Autowired
+	private PersonaRepository pR;
+	@Override
+	public Persona savePersona(Persona persona) {
+		// TODO Auto-generated method stub
+		return pR.save(persona);
+	}
+
+}

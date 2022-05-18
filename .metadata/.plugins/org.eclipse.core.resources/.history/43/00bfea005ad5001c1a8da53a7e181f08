@@ -1,0 +1,39 @@
+package com.example.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.example.models.Sede;
+import com.example.repositories.SedeRepository;
+import com.mongodb.ConnectionString;
+import com.mongodb.MongoClientSettings;
+import com.mongodb.ServerApi;
+import com.mongodb.ServerApiVersion;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoDatabase;
+
+
+@SpringBootApplication
+public class ProyectoSmartFitApplication implements CommandLineRunner{
+	
+	private final SedeRepository sR;
+	
+	@Autowired
+	public ProyectoSmartFitApplication(SedeRepository sR)
+	{
+		this.sR = sR;
+	}
+	
+	public static void main(String[] args) {
+		SpringApplication.run(ProyectoSmartFitApplication.class, args);
+		
+		
+	}
+	public 
+	
+	
+
+}

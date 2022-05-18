@@ -1,0 +1,12 @@
+package com.example.demo.models;
+
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+@Entity
+@DiscriminatorValue("1")
+public class SuperAdministrador extends DTI{
+
+	
+
+}

@@ -1,0 +1,8 @@
+package com.example.demo.services;
+
+import com.example.demo.models.Colaborador;
+
+public interface ColaboradorInterface {
+	
+	Colaborador saveColaborador(Colaborador colaborador);
+}

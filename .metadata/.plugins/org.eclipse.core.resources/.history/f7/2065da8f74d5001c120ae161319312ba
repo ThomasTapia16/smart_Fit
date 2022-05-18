@@ -1,0 +1,11 @@
+package com.example.demo.models;
+
+
+
+public class Colaborador {
+	
+	@Id
+	private String rut;
+	private String nombre;
+	private String apellido;
+}

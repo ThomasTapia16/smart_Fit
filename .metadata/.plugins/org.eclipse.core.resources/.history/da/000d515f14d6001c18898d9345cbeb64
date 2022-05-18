@@ -1,0 +1,9 @@
+package com.example.demo.models;
+
+import javax.persistence.ManyToOne;
+
+public class Clase {
+	
+	@ManyToOne
+	private SalaEntrenamientoMasivo sala;
+}

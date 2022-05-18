@@ -1,0 +1,22 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProyectoSmartFitApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProyectoSmartFitApplication.class, args);
+		ConnectionString connectionString = new ConnectionString("mongodb+srv://smartfit:<password>@test.tavim.mongodb.net/?retryWrites=true&w=majority");
+		MongoClientSettings settings = MongoClientSettings.builder()
+		        .applyConnectionString(connectionString)
+		        .serverApi(ServerApi.builder()
+		            .version(ServerApiVersion.V1)
+		            .build())
+		        .build();
+		MongoClient mongoClient = MongoClients.create(settings);
+		MongoDatabase database = mongoClient.getDatabase("test");
+	}
+
+}

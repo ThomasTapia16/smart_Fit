@@ -1,0 +1,18 @@
+package com.example.demo.models;
+
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+
+@Entity
+@Inheritance(strategy=InheritanceType.JOINED)
+@DiscriminatorColumn(name="tipo_admin")
+public abstract class DTI extends Persona{
+
+	public DTI(String rut, String nombre, String apellido, String correo, String pwd) {
+		super(rut, nombre, apellido, correo, pwd);
+		// TODO Auto-generated constructor stub
+	}
+
+}

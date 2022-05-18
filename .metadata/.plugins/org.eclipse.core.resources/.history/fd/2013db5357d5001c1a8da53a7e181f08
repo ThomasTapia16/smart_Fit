@@ -1,0 +1,17 @@
+package com.example.models;
+
+import java.util.LinkedList;
+
+@Document
+public class Sede {
+	
+	private int id_sede;
+	private String nombre_sede;
+	private String region;
+	private String ciudad;
+	private LinkedList<Sala> salas = new LinkedList<>();
+	
+	
+	
+
+}

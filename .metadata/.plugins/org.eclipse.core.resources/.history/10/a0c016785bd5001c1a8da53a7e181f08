@@ -1,0 +1,74 @@
+package com.example.models;
+
+import java.util.LinkedList;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+@Document
+public class Sede {
+	
+	@Id
+	private int id_sede;
+	@Field
+	private String nombre_sede;
+	@Field
+	private String region;
+	@Field
+	private String ciudad;
+	@Field
+	private LinkedList<Sala> salas = new LinkedList<>();
+	
+	public Sede(){}
+
+	public int getId_sede() {
+		return id_sede;
+	}
+
+	public void setId_sede(int id_sede) {
+		this.id_sede = id_sede;
+	}
+
+	public String getNombre_sede() {
+		return nombre_sede;
+	}
+
+	public void setNombre_sede(String nombre_sede) {
+		this.nombre_sede = nombre_sede;
+	}
+
+	public String getRegion() {
+		return region;
+	}
+
+	public void setRegion(String region) {
+		this.region = region;
+	}
+
+	public String getCiudad() {
+		return ciudad;
+	}
+
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
+	}
+
+	public LinkedList<Sala> getSalas() {
+		return salas;
+	}
+
+	public void setSalas(LinkedList<Sala> salas) {
+		this.salas = salas;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

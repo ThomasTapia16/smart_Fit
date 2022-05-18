@@ -1,0 +1,7 @@
+package com.example.demo.models;
+
+public class Piso {
+	
+	private LinkedList<Sala> salas = new LinkedList<>();
+	private LinkedList<Colaborador> encargadosDePiso = new LinkedList<>();
+}

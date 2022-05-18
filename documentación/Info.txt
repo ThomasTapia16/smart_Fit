@@ -1,0 +1,1 @@
+Carpeta para subir los diagramas e información relevante para el desarrollo del proyecto.

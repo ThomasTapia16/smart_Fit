@@ -1,0 +1,11 @@
+package com.example.demo.models;
+
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Clase {
+	
+	@ManyToOne
+	private SalaEntrenamientoMasivo sala;
+}

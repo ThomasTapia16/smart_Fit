@@ -1,0 +1,11 @@
+package com.example.models;
+
+public abstract class Persona {
+	
+	private int rut;
+	private String nombre;
+	private String apellido;
+	private String correo;
+	private String contraseña;
+	private String telefono;
+}

@@ -1,0 +1,14 @@
+package com.example.demo.models;
+
+import org.springframework.data.annotation.Id;
+
+@Entity
+public class Colaborador {
+	
+	@Id
+	private String rut;
+	private String nombre;
+	private String apellido;
+	private String correo;
+	private String pwd;
+}

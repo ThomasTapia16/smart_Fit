@@ -1,0 +1,14 @@
+package com.example.demo.services;
+
+import com.example.demo.models.Colaborador;
+import com.example.demo.repositories.ColaboradorRepository;
+
+public class ColaboradorServImp implements ColaboradorInterface{
+
+	@Override
+	public Colaborador saveColaborador(Colaborador colaborador) {
+		// TODO Auto-generated method stub
+		return ColaboradorRepository.save(colaborador);
+	}
+
+}

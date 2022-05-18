@@ -1,0 +1,7 @@
+package com.example.api;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface ColaboradorRepository extends MongoRepository<Persona,int>{
+
+}

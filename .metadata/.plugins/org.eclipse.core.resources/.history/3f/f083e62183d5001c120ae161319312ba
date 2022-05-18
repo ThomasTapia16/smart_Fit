@@ -1,0 +1,10 @@
+package com.example.demo.models;
+
+public class DTI extends Persona{
+
+	public DTI(String rut, String nombre, String apellido, String correo, String pwd) {
+		super(rut, nombre, apellido, correo, pwd);
+		// TODO Auto-generated constructor stub
+	}
+
+}

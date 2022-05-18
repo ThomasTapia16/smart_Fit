@@ -1,0 +1,27 @@
+package com.example.demo.models;
+
+import java.util.LinkedList;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="pisos")
+public class Piso {
+	@Id
+	private float id;
+	@ManyToOne
+	private Sede sede;
+	@OneToMany(targetEntity=Colaborador.class)
+	private List<Colaborador> encargado = new List<>();
+	@OneToMany(targetEntity=Sala.class)
+	private LinkedList<Sala> salas = new LinkedList<>();
+	public Piso() {
+		super();
+	}
+	
+	
+}

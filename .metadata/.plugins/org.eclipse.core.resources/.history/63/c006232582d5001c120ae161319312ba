@@ -1,0 +1,23 @@
+package com.example.demo.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.models.Colaborador;
+import com.example.demo.repositories.ColaboradorRepository;
+
+@Service
+public class ColaboradorServImp implements ColaboradorInterface{
+
+	@Autowired
+	private ColaboradorRepository colRep;
+	
+	@Override
+	public Colaborador saveColaborador(Colaborador colaborador) {
+		
+		return colRep.save(colaborador);
+	}
+
+	
+
+}

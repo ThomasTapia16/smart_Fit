@@ -1,0 +1,11 @@
+package com.example.models;
+
+public class Sede {
+	
+	private int id_sede;
+	private String nombre_sede;
+	private String region;
+	private String ciudad;
+	
+
+}

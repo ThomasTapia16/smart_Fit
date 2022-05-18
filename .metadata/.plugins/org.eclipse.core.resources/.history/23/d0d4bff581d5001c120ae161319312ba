@@ -1,0 +1,15 @@
+package com.example.demo.services;
+
+import com.example.demo.models.Persona;
+
+public class PersonaS implements PersonaI{
+	
+	@Autowired
+	PersonaRepository pR;
+	@Override
+	public Persona savePersona(Persona persona) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
