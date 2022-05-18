@@ -25,8 +25,18 @@
 
                 <form action="home" class="needs-validation" novalidate>     
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="apellido" placeholder="lastname" required>
+                        <input type="text" class="form-control" id="nombreyapellido" placeholder="Nombre y apellido" required>
                         <label for="floatingInput">Nombre y Apellido</label>
+                        <div class="valid-feedback">
+                            Datos ingresados corectamente
+                        </div>
+                        <div class="invalid-feedback">
+                            Ingrese datos validos
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="rut" placeholder="rut" required>
+                        <label for="floatingInput">Rut</label>
                         <div class="valid-feedback">
                             Datos ingresados corectamente
                         </div>
@@ -74,7 +84,7 @@
     </div>
 
     <script src="bootstrap.bundle.min.js"></script>
-    <script src="login.js"></script>
+    <script src="validacionFormularioBootstrap.js"></script>
 
 </body>
 </html>

@@ -11,11 +11,11 @@
                     
                     <h2 class="fw-bold text-center py5" style="margin-bottom: 2rem;"> Registrar Nuevo Administrador </h2>
     
-                    <form class="row g-3 needs-validation" action="#" method="POST" th:action="@{/crearAdministrador}" th:object="${admin}" novalidate>
+                    <form class="row g-3 needs-validation" method="POST" novalidate>
 
                         <div class="col-md-4">
                             <label  class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" value="" th:field="*{nombre}" required>
+                            <input type="text" class="form-control" id="nombre" value="" required>
                             <div class="valid-feedback">
                                 Correcto!
                             </div>
@@ -46,24 +46,20 @@
                             </div>
                         </div>
 
-		               	<div class="col-md-3">
-							<label class="form-label">Permiso</label>
-						  	<select class="form-select" id="Permiso" required>
-						    	<option selected disabled value="">Seleccione...</option>
-						   		<option>Admin</option>
-						   		<option>SuperAdmin</option>
-						  	</select>
-						  	<div class="valid-feedback">
+		               	<div class="col-md-4">
+                            <label  class="form-label">Permiso</label>
+                            <input type="text" class="form-control" id="rut" value="A" required>
+                            <div class="valid-feedback">
                                 Correcto
                             </div>
-						  	<div class="invalid-feedback">
-						    	Please select a valid state.
-						  	</div>
-						</div>
+                            <div class="invalid-feedback">
+                                Ingrese datos validos
+                            </div>
+                        </div>
 
                         <div class="col-md-4">
                             <label  class="form-label">Correo</label>
-                            <input type="email" class="form-control" id="correo" value="example@email.com" required>
+                            <input type="email" class="form-control" id="correo" value="" required>
                             <div class="valid-feedback">
                                 Correcto
                             </div>
@@ -95,7 +91,7 @@
     
         
     <script src="bootstrap.bundle.min.js"></script>
-    <script src="login.js"></script>
+    <script src="validacionFormularioBootstrap.js"></script>
 <script th:fragment = "script" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
